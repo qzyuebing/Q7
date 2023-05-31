@@ -32,10 +32,3 @@ config interface 'trm_wwan6'
 	option device '@trm_wwan'
 	option proto 'dhcpv6'
 
-config interface 'wan_vpn'
-	option proto 'l2tp'
-	option server 'x.f3322.net'
-	option username '123'
-	option password '123'
-	option ipv6 'auto'
-

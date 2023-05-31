@@ -19,10 +19,15 @@ config timeserver 'ntp'
 
 config led
 	option name 'wifi'
-	option sysfs 'red:status'
 	option trigger 'netdev'
 	list mode 'link'
 	list mode 'tx'
 	list mode 'rx'
 	option dev 'wlan0'
+	option sysfs 'blue:status'
+
+config led
+	option name 'red light '
+	option sysfs 'red:status'
+	option trigger 'default-on'
 
